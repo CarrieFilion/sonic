@@ -136,7 +136,7 @@ class ExpandGalaxies:
             I0, Reff, n = popt
             
             # Define the galaxy radius as a multiple of effective radius
-            galaxy_radius = 10 * Reff 
+            galaxy_radius = 6 * Reff 
             print('Reff = ', Reff, ' Galaxy Radius: ', galaxy_radius)
             return galaxy_radius
         

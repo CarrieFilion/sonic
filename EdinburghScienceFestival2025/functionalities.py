@@ -67,7 +67,7 @@ def beef_it(image_path, rescale_factor, rscale, recon_lims, save_loc = None, sav
     
     #
     # pick orders for the expansion
-    mmax = 8  
+    mmax = 7  
     nmax = 12 #twelve makes the mapping to notes easier #8, 12
         
     # pick a scalelength for the reconstruction
