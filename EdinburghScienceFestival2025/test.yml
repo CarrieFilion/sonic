@@ -1,0 +1,65 @@
+#
+# defaults for all synth parameters, mappable parameter ranges in ./parameter_ranges/default.yml
+#
+
+# preset name
+name: "test"
+
+# full description
+description: >-
+  Default preset for the synthesizer, using three saw wave oscillators,
+  two of which are detuned slightly higher and lower respectively, with
+  lower volumes. This gives a harmonically rich sound, suitable for
+  filtering, with detuned unison saws removing some harshness.
+
+# oscillator information
+oscillators:
+  # oscillator are denoted osc<n> with n=3 by default
+  #
+  # level: the intrinsic volume
+  #
+  # detune: the change in tuning as a percentage of the input frequency
+  #
+  # form: the waveform, choose from:
+  # ['saw', 'square', 'sine', 'tri', 'noise']
+  #
+  osc1:
+    form: 'tri'
+    level: 1.
+    detune: 0.
+    phase: 0
+    
+  osc2:
+    form: 'tri'
+    level: .2
+    detune: 2
+    phase: .5
+
+  osc3:
+    form: 'tri'
+    level: .1
+    detune: 3
+    phase: .25
+
+  osc4:
+    form: 'tri'
+    level: .2
+    detune: .5
+    phase: .75
+
+  osc5:
+    form: 'tri'
+    level: .1
+    detune: .3
+    phase: .5
+
+# A,D,S & R correspond to 'attack', 'decay', 'sustain' and 'release'
+volume_envelope:
+  A: 0.1
+  D: 0.1
+  S: .5
+  R: .5
+  Ac: 0.
+  Dc: 0.
+  Rc: 0.
+  level: 1.
